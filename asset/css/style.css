@@ -7,20 +7,32 @@
     --white-color: #fff;
     --sign-up-background-and-text-color:#523728;
     --nav-bar-background-and-text-color:rgba(111, 68, 54, 0.80);
+    --home-text-color:#523728;
+    --home-title-info-color: rgba(27, 11, 11, 0.75);
+    --scrollbar-color:#523728;
+    --home-button-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 
+                                0px 5px 11px 0px rgba(0, 0, 0, 0.10),
+                                 0px 20px 20px 0px rgba(0, 0, 0, 0.09), 
+                                 0px 45px 27px 0px rgba(0, 0, 0, 0.05), 
+                                 0px 81px 32px 0px rgba(0, 0, 0, 0.01), 
+                                 0px 126px 35px 0px rgba(0, 0, 0, 0.00);
+
 
     /*-----================FontS,Font Sizes & Font Weights================----------*/
 
             /*-----================FontS================----------*/
 
-    --main-font:Inika;
+    --accent-font:Inika;
+    --sub-accent-font: Inter;
     --general-font:Poppins;
-    --accent-font: Inter;
+    
 
             /*-----================Font Sizes================----------*/
 
     --nav-font-size:16px;
 
             /*-----================Font Sizes================----------*/
+    
 
     --font--smaller:400;
     --font-small:500;
@@ -30,6 +42,26 @@
 
     
 }
+
+        /*----------=============Webkit-------------================= */
+
+        ::-webkit-scrollbar {
+            width: .6rem;
+            background: transparent;
+            border-radius: 1rem;
+            transition: .3s ease;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            width: 6rem;
+            border-radius: 1rem;
+            background:transparent;
+        }
+
+        ::-webkit-scrollbar-thumb:hover{
+            background-color: var(--scrollbar-color);
+        }
+
 
     *{
         margin: 0;
@@ -41,7 +73,7 @@
     
     /*-----================HEADER START================----------*/
     header {
-        background:url(/asset/img/MAIN\ BG.png);
+        background:url(/asset/img/MAIN\ BG2.png);
         width: 100%;
         height: 17.9vh;
         border: none;
@@ -55,7 +87,8 @@
     .logo {
         width: 132px;
         height: 130px;
-        margin-left: 3rem;
+        transform:translateX(3rem);
+        cursor: pointer;
     }
 
     .nav-menu,
@@ -74,7 +107,7 @@
     }
 
     .nav-list {
-        gap: 2.1rem;
+        gap: 2.12rem;
         margin-top: 2.5rem;
         cursor: pointer;
         width: 460px;
@@ -89,7 +122,7 @@
 
     .nav-menu ul li a {
         color: var(--white-color);
-        font-family: var(--accent-font);
+        font-family: var(--sub-accent-font);
         font-weight: var(--font-medium);
         font-size: var(--nav-font-size);
         display: inline-block;
@@ -292,20 +325,167 @@
             font-size: 12px;
         }
     }
+
+    @media screen and (max-width:320px){
+
+        header{
+            height: 14.9vh;
+        }
+    }
 /*-----================HEADER END================----------*/
 
-/*
-    .fefe{
+    section{
+        padding: 0 8%;
+    }
+
+    .home{
         background:url(/asset/img/MAIN\ BG.png);
         width: 100%;
-        height: 70vh;
+        height: 95vh;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: cover; 
+        top: 7.5rem;
+        position: relative;
+        display: flex;
+    }
 
-       
-    }*/
+    
+    
+    .container-home {
+        margin-top: 5.5rem;
+        position: absolute;
+    }
 
+    .home-title {
+        font-size: 4.125rem;
+        color: var(--home-text-color);
+        font-weight: var(--font-smaller);
+        font-family: var(--accent-font);
+        line-height: 120%;
+    }
+
+    .home-title-info{
+        margin-top: 1rem;
+        font-size: 18px;
+        font-weight: var(--font-smaller);
+        font-family: var(--sub-accent-font);
+        color: var(--home-title-info-color);
+    }
+
+    .home-button{
+        margin-top: 2.5rem;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .get-started,
+    .watch-video {
+        padding:19px 30px;
+        border-radius: 100px;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-family: var(--general-font);
+        font-weight: var(--font-medium);
+    }
+ 
+   .get-started { 
+        box-shadow: var(--home-button-box-shadow);
+        background-color: #6A4028;
+        color: var(--white-color);
+        cursor: pointer;
+    }
+
+    .watch-video {
+        border: 1px solid #3D2619;
+        color: #523728;
+        cursor: pointer;
+    }
+
+    .home-image{
+        padding: 0 2%;
+        transform: translateY(-5.75rem);
+        z-index: 1000;
+    }
+
+    .home-image img{
+        width: 650px;
+        height: 620px;
+        transform: translateX(35.5rem);
+        z-index: 9999;
+    }
+
+
+    .about-container{
+        display: flex;
+        margin-top: 5rem;
+        justify-content:flex-start;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about-img{
+        padding: 0 2%;
+        margin-left: -3rem;
+        
+    }
+
+    .about-img img{
+        width: 510px;
+        height: 500px;
+    }
+
+    .about-info{
+        margin-top: 5rem;
+    }
+
+    .about-title{
+
+        color: #220404;
+        font-size: 3.75rem;
+        font-family: var(--accent-font);
+        font-weight: 400;
+    }
+
+    .about-subtitle{
+        color: rgba(27, 11, 11, 0.75);
+        font-family: var(--general-font);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: var(--font-smaller);
+        line-height: normal;
+    }
+
+    .info-title,
+    .info-subtitle
+    {
+        margin-top: 1.75rem;
+        color: rgba(0, 0, 0, 0.70);
+        font-family: var(--sub-accent-font);
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: var(--font--smaller);
+        line-height: normal;
+    }
+
+    .about-link{
+        margin-top: 2rem;
+        display: inline-flex;
+        height: 56px;
+        padding: 19px 42px 18px 41px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 100px;
+        background: #6A4028;
+        color: var(--white-color);
+        font-family: var(--general-font);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: var(--font-medium);
+    }
 
     @media screen and (min-width: 1000px){
         
@@ -331,3 +511,4 @@
         }
         
     }
+    
