@@ -70,6 +70,20 @@
         list-style: none;
         text-decoration: none;   
     }
+    body{
+        background:url(/asset/img/MAIN\ BG.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 1000vh;
+        }
+    main{
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
     
     /*-----================HEADER START================----------*/
     header {
@@ -81,7 +95,7 @@
         background-size: cover;
         position: fixed;
         padding: 1.2rem,1.2rem,1.2rem,1.2rem;
-        z-index: 100;
+        z-index: 101;
     }
 
     .logo {
@@ -339,13 +353,11 @@
     }
 
     .home{
-        background:url(/asset/img/MAIN\ BG.png);
+       
         width: 100%;
-        height: 95vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; 
-        top: 7.5rem;
+        height: 109vh;
+        
+        top: 6.57rem;
         position: relative;
         display: flex;
     }
@@ -353,7 +365,7 @@
     
     
     .container-home {
-        margin-top: 5.5rem;
+        transform: translateY(7rem);
         position: absolute;
     }
 
@@ -405,18 +417,26 @@
 
     .home-image{
         padding: 0 2%;
-        transform: translateY(-5.75rem);
-        z-index: 1000;
+        transform: translateY(-2.5rem);
+        z-index: 1000000000000;
+        
     }
 
     .home-image img{
-        width: 650px;
-        height: 620px;
-        transform: translateX(35.5rem);
-        z-index: 9999;
+        width: 100%;
+        height: 600px;
+        transform: translateX(36.8rem);
+        z-index: 999;
+        position: relative;
     }
 
-
+    #about{
+        background-color: var(--white-color);
+        height: 109vh;
+        width: 100%;
+        position: relative;
+        z-index: 100;
+    }
     .about-container{
         display: flex;
         margin-top: 5rem;
@@ -443,7 +463,7 @@
     .about-title{
 
         color: #220404;
-        font-size: 3.75rem;
+        font-size: 3.7rem;
         font-family: var(--accent-font);
         font-weight: 400;
     }
