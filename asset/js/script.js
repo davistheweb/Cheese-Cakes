@@ -23,3 +23,68 @@ const showMenu = (toggleId, navId) => {
 
 }
 showMenu('nav-toggle', 'nav-list');
+
+// active
+/* const sections = document.querySelectorAll('section');
+const navLists = document.querySelectorAll('header .nav-list a');
+
+window.onscroll = () => {
+    sections.forEach(sect => {
+        const top = window.scrollY;
+        const offset = sect.offsetTop;
+        const height = sect.offsetHeight;
+        const id = sect.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            navLists.forEach(links => {
+                links.classList.remove('active');
+            });
+            document.querySelector('header .nav-list a[href*=' + id + ']').classList.add('active');
+            };
+    });
+};
+ */
+/* 
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header .nav-list a');
+
+window.onscroll = () => {
+  sections.forEach(sect => {
+    const top = window.scrollY;
+    const offset = sect.offsetTop;
+    const height = sect.offsetHeight;
+    const id = sect.getAttribute('id');
+
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+      document.querySelector('header .nav-list a[href*="' + id + '"]').classList.add('active');
+    }
+  });
+};
+ */
+
+window.onscroll = () => {
+    console.log("Scrolling...");
+  
+    sections.forEach(sect => {
+      const top = window.scrollY;
+      const offset = sect.offsetTop;
+      const height = sect.offsetHeight;
+      const id = sect.getAttribute('id');
+  
+      console.log("Section ID:", id);
+  
+      if (top >= offset && top < offset + height) {
+        console.log("Section in view:", id);
+  
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+        });
+  
+        document.querySelector('header .nav-list a[href*="' + id + '"]').classList.add('active');
+      }
+    });
+  };
+  
