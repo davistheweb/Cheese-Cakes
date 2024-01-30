@@ -87,4 +87,19 @@ window.onscroll = () => {
       }
     });
   };
+
   
+  //scroll reveal
+
+  ScrollReveal({   
+    origin:'top',
+    distance:'80px',
+    duration:1700,
+    delay:200,
+    reset:'true', 
+    });
+
+    ScrollReveal().reveal('.about-info', { origin:'right'});
+    ScrollReveal().reveal(' .about-img', { origin:'left'});
+    ScrollReveal().reveal('.home-image', { origin: 'bottom'});
+    ScrollReveal().reveal('.container-home', { origin:'top'});
