@@ -88,6 +88,20 @@ window.onscroll = () => {
     });
   };
 
+
+  const watchVideo = document.querySelector('.watch-video');
+const watchDemo = document.querySelector('.watch-demo');
+
+watchVideo.addEventListener('click', () => {
+    watchDemo.classList.toggle('iframe');
+    
+    if (watchDemo.classList.contains('iframe')) {
+        watchVideo.innerHTML = '<i class="ri-pause-circle-fill"></i> Pause';
+    } else {
+        watchVideo.innerHTML = '<i class="ri-play-circle-fill"></i> Watch Demo';
+    }
+});
+
   
   //scroll reveal
 
