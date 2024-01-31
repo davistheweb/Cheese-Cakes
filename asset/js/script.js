@@ -123,6 +123,32 @@ let swiperCards = new Swiper(".cheese-content", {
   },
 });
 
+//Const More Menu
+
+document.addEventListener('DOMContentLoaded', function () {
+  const viewMoreButton = document.getElementById('view__more');
+  const viewMoreMenu = document.getElementById('view-more-menu');
+
+  // Function to toggle the menu visibility
+  function toggleMenu() {
+      viewMoreMenu.classList.toggle('show-menu');
+  }
+
+  // Event listener for "View More" button
+  viewMoreButton.addEventListener('click', function () {
+      toggleMenu();
+  });
+
+  // Event listener for "Close Cheese Menu" button
+  const closeCheeseMenuButton = document.querySelector('.close__cheese__menu');
+  closeCheeseMenuButton.addEventListener('click', function () {
+      toggleMenu();
+  });
+});
+
+  
+
+
 
   //scroll reveal
 
