@@ -12,6 +12,10 @@
     <!--=============== BOXICON ===============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
+    <!---------------===================== SWIPER CSS================-------------->
+
+    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+
     <!---------------=====================CSS================-------------->
     <link rel="stylesheet" href="asset/css/style.css">
     <!---------------=====================ICON================-------------->
@@ -101,9 +105,10 @@
             <h1 class="menu__title">
                 Our Menu
             </h1>
-            <div class="menu__card">
-                <div class="menu__slide">
-                    <article class="cheese__slide">
+            <div class="menu__card swiper">
+                <div class="cheese-content">
+                <div class="menu__slide swiper-wrapper">
+                    <article class="cheese__slide swiper-slide">
                         <div class="cheese__data">
                         <div class="cheese-img">
                         <img class="cheese__img" src="asset/img/Blueberry Cheesecake Image.png" alt="">
@@ -117,12 +122,12 @@
                             </p>
                         </div>
                         <div class="cheese__cost">
-                            <h3 class="cheese__prize">
+                            <h4 class="cheese__prize">
                             <span class="dollar">
                                 $
                             </span>
                             9.00
-                            </h3>
+                            </h4>
                             <span class="cheese__rating">
                                 <i class="ri-star-s-fill menu-star"></i>
                                 <i class="ri-star-s-fill menu-star"></i>
@@ -133,10 +138,10 @@
                         </div>
                         </div>
                     </article>
-                    <!-- <article class="cheese__slide">
+                    <article class="cheese__slide swiper-slide">
                         <div class="cheese__data">
                         <div class="cheese-img">
-                        <img  src="asset/img/Blueberry Cheesecake Image.png" alt="">
+                        <img class="cheese__img" src="asset/img/Blueberry Cheesecake Image.png" alt="">
                         </div>
                             <div class="cheese__data__info">
                             <h2 class="cheese__title">
@@ -146,6 +151,13 @@
                                 Blueberry love, cheesecake delight!
                             </p>
                         </div>
+                        <div class="cheese__cost">
+                            <h4 class="cheese__prize">
+                            <span class="dollar">
+                                $
+                            </span>
+                            9.00
+                            </h4>
                             <span class="cheese__rating">
                                 <i class="ri-star-s-fill menu-star"></i>
                                 <i class="ri-star-s-fill menu-star"></i>
@@ -153,13 +165,13 @@
                                 <i class="ri-star-s-fill menu-star"></i>
                                 <i class="ri-star-s-fill menu-star"></i>
                             </span>
+                        </div>
                         </div>
                     </article>
-                    <article class="cheese__slide">
+                    <article class="cheese__slide swiper-slide">
                         <div class="cheese__data">
                         <div class="cheese-img">
-                        <img 
-                         src="asset/img/Blueberry Cheesecake Image.png" alt="">
+                        <img class="cheese__img" src="asset/img/Blueberry Cheesecake Image.png" alt="">
                         </div>
                             <div class="cheese__data__info">
                             <h2 class="cheese__title">
@@ -169,23 +181,51 @@
                                 Blueberry love, cheesecake delight!
                             </p>
                         </div>
+                        <div class="cheese__cost">
+                            <h4 class="cheese__prize">
+                            <span class="dollar">
+                                $
+                            </span>
+                            9.00
+                            </h4>
                             <span class="cheese__rating">
                                 <i class="ri-star-s-fill menu-star"></i>
-                                <i class="ri-star-s-fil menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
                                 <i class="ri-star-s-fill menu-star"></i>
                                 <i class="ri-star-s-fill menu-star"></i>
                                 <i class="ri-star-s-fill menu-star"></i>
                             </span>
                         </div>
-                    </article> -->
+                        </div>
+                    </article>
+                    
                 </div>
+
+            </div>
+            <div class="swiper-button">
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+            </div>
                 
             </div>
+            
+        </div>
+
+        <div class="view-more">
+            <a href="#" class="view__more">View More</a>
         </div>
 
     </section>
     </main>
 
+
+<!----------------===================SwiperJS=============----------->
+
+<script src="asset/js/swiper-bundle.min.js"></script>
 
 <!----------------===================ScrollReveal=============----------->
 
