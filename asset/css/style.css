@@ -558,7 +558,7 @@
     }
 
     .cheese__menu {
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
 
     .menu__title{
@@ -567,12 +567,16 @@
         font-weight: var(--font--smaller);
         color: var(--blog-background-color);
         text-align: center;
+        position: relative;
+        top: 4rem;
+        
     }
     .menu__card{
         background-color: var(--home-text-color);
         max-width: 1200px ;
         width: 100%;
         padding: 50px 0;
+        margin-top: 3rem;
         
     }
     
@@ -580,7 +584,7 @@
         background-color: var(--blog-background-color);
         border-radius: 2.5rem;
         width: 320px;
-        height: 310px;
+        height: 320px;
         
     }
 
@@ -654,8 +658,9 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-    margin-top: initial;
-    bottom:-1.5rem;
+    top: initial;
+    position: absolute;
+    bottom:0;
     width: 2.5rem;
     height: 2.5rem;
     background-color: var(--white-color);
