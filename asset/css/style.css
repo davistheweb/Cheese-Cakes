@@ -694,6 +694,7 @@
        color: var(--white-color);
        font-size: 1.3563rem;
        font-family: var(--sub-accent-font);
+       margin-bottom: 3rem;
        
     }
     .view__more i {
