@@ -89,18 +89,18 @@ window.onscroll = () => {
   };
 
 
-  const watchVideo = document.querySelector('.watch-video');
-const watchDemo = document.querySelector('.watch-demo');
+  const watchVideo = document.querySelector('.watch-video'),
+   watchDemo = document.querySelector('.watch-demo');
 
-watchVideo.addEventListener('click', () => {
-    watchDemo.classList.toggle('iframe');
-    
-    if (watchDemo.classList.contains('iframe')) {
-        watchVideo.innerHTML = '<i class="ri-pause-circle-fill"></i> Pause';
-    } else {
-        watchVideo.innerHTML = '<i class="ri-play-circle-fill"></i> Watch Demo';
-    }
-});
+  watchVideo.addEventListener('click', () => {
+      watchDemo.classList.toggle('iframe');
+      
+      if (watchDemo.classList.contains('iframe')) {
+          watchVideo.innerHTML = '<i class="ri-stop-circle-fill"></i> Close';
+      } else {
+          watchVideo.innerHTML = '<i class="ri-play-circle-fill"></i> Watch Demo';
+      }
+  });
 
   
 let swiperCards = new Swiper(".cheese-content", {
@@ -162,5 +162,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     ScrollReveal().reveal('.about-info', { origin:'right'});
     ScrollReveal().reveal(' .about-img', { origin:'left'});
-    ScrollReveal().reveal('.home-image', { origin: 'bottom'});
-    ScrollReveal().reveal('.container-home', { origin:'top'});
+    ScrollReveal().reveal('.home-image, .menu__title', { origin: 'bottom'});
+    ScrollReveal().reveal('.container-home, .menu__card', { origin:'top'});
