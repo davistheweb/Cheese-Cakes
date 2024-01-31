@@ -684,13 +684,20 @@
 }
     .view-more{
         margin-top: 4rem;
-        margin-left: 150vh;
+       
         display: flex;
     }
     
     .view__more{
        align-items: flex-end;
+       margin-left: auto;
+       color: var(--white-color);
+       font-size: 1.3563rem;
+       font-family: var(--sub-accent-font);
        
+    }
+    .view__more i {
+        font-size: 1.532rem;
     }
 
     
