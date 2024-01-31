@@ -572,12 +572,40 @@
         display: flex;
         
     }
+    .cheese__slide{
+        background-color: var(--blog-background-color);
+        
+    }
+
+    .cheese__title{
+        color: var(--menu-content-title-color);
+        font-family: var(--accent-font);
+        font-size: 25px;
+        font-style: normal;
+        font-weight: var(--font-regular);
+        line-height: normal;
+    }
+
+    .cheese__subtitle{
+        color: var(--menu-content-subtitle-color);
+        font-family: var(--accent-font);
+        font-size: 13px;
+        font-style: normal;
+        font-weight: var(--font--smaller);
+        line-height: normal;
+    }
+
+
+
+    .cheese__img{
+        width: 163px;
+        height: 158px;
+    }
+
 
     
 
-    .cheese__slide{
-        background-color: var(--blog-background-color);
-    }
+    
 
     @media screen and (max-width:380px) {
 
