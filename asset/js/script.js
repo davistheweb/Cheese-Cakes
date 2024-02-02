@@ -182,5 +182,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     ScrollReveal().reveal('.about-info', { origin:'right'});
     ScrollReveal().reveal(' .about-img', { origin:'left'});
-    ScrollReveal().reveal('.home-image, .menu__title', { origin: 'bottom'});
-    ScrollReveal().reveal('.container-home, .menu__card', { origin:'top'});
+    ScrollReveal().reveal('.home-image, .menu__title, .blog-subtitle, .blog__menu', { origin: 'bottom'});
+    ScrollReveal().reveal('.container-home, .menu__card, .blog-title', { origin:'top'});
