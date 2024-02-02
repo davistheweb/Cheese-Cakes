@@ -602,7 +602,6 @@
 
     .menu{
         background-color: var(--home-text-color);
-       
     }
 
     .cheese__menu {
@@ -755,20 +754,16 @@
     .view-more-menu{
         position: absolute;
         width:40%;
-        height: 75vh;
-        overflow: scroll;
-        overflow-x: hidden;
-        margin-left: 17rem;
-        /* background-color:#573d2f; */
-        background-color: var(--home-text-color);
+        margin-left: 15rem;
+        background-color:#573d2f;
         justify-content: center;
         align-items: center;
-        top: 96.3rem;
-        z-index: 10000;
+        top: 103.3rem;
+        z-index: 99999;
         border-radius: 1.5rem;
         box-shadow: var(--about-box-shadow);
         transform: scale(0);
-        transition: transform .3s ease;
+        transition: transform 1s ease;
         
     }
     .view-more-menu::-webkit-scrollbar{

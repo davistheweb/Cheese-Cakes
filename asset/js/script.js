@@ -89,6 +89,7 @@ window.onscroll = () => {
   };
 
 
+<<<<<<< HEAD
   const watchVideo = document.querySelector('.watch-video');
 const watchDemo = document.querySelector('.home__video');
 
@@ -105,6 +106,20 @@ watchVideo.addEventListener('click', () => {
         // You may also want to add code to pause or stop the video here
     }
 });
+=======
+  const watchVideo = document.querySelector('.watch-video'),
+   watchDemo = document.querySelector('.watch-demo');
+
+  watchVideo.addEventListener('click', () => {
+      watchDemo.classList.toggle('iframe');
+      
+      if (watchDemo.classList.contains('iframe')) {
+          watchVideo.innerHTML = '<i class="ri-stop-circle-fill"></i> Close';
+      } else {
+          watchVideo.innerHTML = '<i class="ri-play-circle-fill"></i> Watch Demo';
+      }
+  });
+>>>>>>> 61ca578f8564697215a903cde092f9b856fe4ce2
 
 
   
@@ -167,5 +182,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     ScrollReveal().reveal('.about-info', { origin:'right'});
     ScrollReveal().reveal(' .about-img', { origin:'left'});
-    ScrollReveal().reveal('.home-image', { origin: 'bottom'});
-    ScrollReveal().reveal('.container-home', { origin:'top'});
+    ScrollReveal().reveal('.home-image, .menu__title', { origin: 'bottom'});
+    ScrollReveal().reveal('.container-home, .menu__card', { origin:'top'});
