@@ -90,17 +90,22 @@ window.onscroll = () => {
 
 
   const watchVideo = document.querySelector('.watch-video');
-const watchDemo = document.querySelector('.watch-demo');
+const watchDemo = document.querySelector('.home__video');
 
 watchVideo.addEventListener('click', () => {
-    watchDemo.classList.toggle('iframe');
-    
-    if (watchDemo.classList.contains('iframe')) {
-        watchVideo.innerHTML = '<i class="ri-pause-circle-fill"></i> Pause';
+    watchDemo.classList.toggle('video-open');
+
+    if (watchDemo.classList.contains('video-open')) {
+        watchVideo.innerHTML = '<i class="ri-stop-circle-fill"></i> Close';
+        watchDemo.style.display = 'block'; // Ensure video element is visible
+        // You may also want to add code to play the video here
     } else {
         watchVideo.innerHTML = '<i class="ri-play-circle-fill"></i> Watch Demo';
+        watchDemo.style.display = 'none'; // Hide the video element
+        // You may also want to add code to pause or stop the video here
     }
 });
+
 
   
 let swiperCards = new Swiper(".cheese-content", {

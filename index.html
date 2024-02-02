@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Of Cheese Cake</title>
     <!---------------=============== REMIX ICONS ===============------------->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
-    <!--=============== BOXICON ===============-->
+    <!--=============== BOX-ICON ===============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!---------------===================== SWIPER CSS================-------------->
@@ -49,7 +47,7 @@
     <!-------------=================HOME============================-->
     <main class="main">
     <section class="home" id="home">
-        <div class="container grid">
+        <div class="container">
             <div class="container-home ">
                 <div class="home-info">
                     <h1 class="home-title">Bite the World of <br>CheeseCake Wonders</h1>
@@ -60,7 +58,7 @@
                     <a href="#" class="get-started">Get Started</a>
                     <a class="watch-video"><i class="ri-play-circle-fill"></i> Watch Demo</a>
                 </div>
-                <div class="watch-iframe">
+                <!-- <div class="watch-iframe">
                     <iframe class="watch-demo" 
                     src="https://www.youtube.com/embed/fZ13nRpZIAU?si=hywevPqhEeH1rxm-" 
                     title="YouTube video player" frameborder="0" 
@@ -69,12 +67,21 @@
                     allowfullscreen>
                     </iframe>
                 
+                </div> -->
+                <div class="home__video">
+                    <iframe class="home__iframe"
+                        src="https://www.youtube.com/embed/fZ13nRpZIAU?si=hywevPqhEeH1rxm-"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                        picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="home-image">
+                    <img src="asset/img/Main Image (Home).png" class="home__img" alt="">
                 </div>
             </div>
-             <div class="home-image">
-                <img src="asset/img/Main Image (Home).png" class="home__img" alt="">
-            </div>
+             
         </div>
+
+       
     </section>
 
     <section id="about">
@@ -352,31 +359,333 @@
                     
                 </div>
 
-                <div class="swiper-button">
-                    <div class="swiper-button-prev">
-                        <i class="ri-arrow-left-s-line"></i>
-                        </div>
-                        <div class="swiper-button-next">
-                            <i class="ri-arrow-right-s-line"></i>
-                        </div>
-                    </div>
+                
 
             </div>
             
+            
                 
             </div>
+            <div class="swiper-button">
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
             
         </div>
 
         <div class="view-more">
-            <a class="view__more" id="view__more">View More &nbsp; <i class="ri-arrow-right-s-line"></i></a>
+            <a class="view__more" id="view__more">View More <i class="ri-arrow-right-s-line"></i></a>
         </div>
 
         <div class="view-more-menu" id="view-more-menu">
            <a class="close__cheese__menu" ><i class='bx bx-x'></i></a>
-            <div class="our-menu"><h1>More Of Our menu</h1></div>
+            <div class="our-menu"><h1 class="our__menu">More Of Our menu</h1></div>
             <div class="our-menu-content">
                 <div class="menu-description grid">
+                    <article class="menu__content">
+                        <div class="cheese__data">
+                        <div class="cheese-img">
+                        <img class="menu__image" src="asset/img/About Us Image.png" alt="">
+                        </div>
+                            <div class="cheese__data__info">
+                            <h2 class="our-menu__title">
+                                StrawBerry CheeseCake
+                            </h2>
+                            <p class="our-menu__subtitle">
+                                CheeseCake mixed berries
+                            </p>
+                        </div>
+                        <div class="our-menu__cost">
+                            <h4 class="our-menu__prize">
+                            <span class="dollar">
+                                $
+                            </span>
+                            21.00
+                            </h4>
+                            <span class="our-menu__rating">
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                            </span>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="menu__content">
+                        <div class="cheese__data">
+                        <div class="cheese-img">
+                        <img class="menu__image" src="asset/img/Blueberry Cheesecake Image.png" alt="">
+                        </div>
+                            <div class="cheese__data__info">
+                            <h2 class="our-menu__title">
+                                BlueBerry CheeseCake
+                            </h2>
+                            <p class="our-menu__subtitle">
+                                Blueberry love, cheesecake delight!
+                            </p>
+                        </div>
+                        <div class="our-menu__cost">
+                            <h4 class="our-menu__prize">
+                            <span class="dollar">
+                                $
+                            </span>
+                            17.00
+                            </h4>
+                            <span class="our-menu__rating">
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                            </span>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="menu__content">
+                        <div class="cheese__data">
+                        <div class="cheese-img">
+                        <img class="menu__image" src="asset/img/chocolate cheese cake.png" alt="">
+                        </div>
+                            <div class="cheese__data__info">
+                            <h2 class="our-menu__title">
+                                Chocolate CheeseCake
+                            </h2>
+                            <p class="our-menu__subtitle">
+                                Cherish Chocolate, relish cheese cake magic!
+                            </p>
+                        </div>
+                        <div class="our-menu__cost">
+                            <h4 class="our-menu__prize">
+                            <span class="dollar">
+                                $
+                            </span>
+                            31.00
+                            </h4>
+                            <span class="our-menu__rating">
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                            </span>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="menu__content">
+                        <div class="cheese__data">
+                        <div class="cheese-img">
+                        <img class="menu__image" src="asset/img/Biscoff cheesecake.png" alt="">
+                        </div>
+                            <div class="cheese__data__info">
+                            <h2 class="our-menu__title">
+                                Biscoff CheeseCake
+                            </h2>
+                            <p class="our-menu__subtitle">
+                                Biscoff adores cheese cake magic
+                            </p>
+                        </div>
+                        <div class="our-menu__cost">
+                            <h4 class="our-menu__prize">
+                            <span class="dollar">
+                                $
+                            </span>
+                            11.00
+                            </h4>
+                            <span class="our-menu__rating">
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                            </span>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="menu__content">
+                        <div class="cheese__data">
+                        <div class="cheese-img">
+                        <img class="menu__image" src="asset/img/Biscoff cheesecake.png" alt="">
+                        </div>
+                            <div class="cheese__data__info">
+                            <h2 class="our-menu__title">
+                                Biscoff CheeseCake
+                            </h2>
+                            <p class="our-menu__subtitle">
+                                Biscoff adores cheese cake magic
+                            </p>
+                        </div>
+                        <div class="our-menu__cost">
+                            <h4 class="our-menu__prize">
+                            <span class="dollar">
+                                $
+                            </span>
+                            11.00
+                            </h4>
+                            <span class="our-menu__rating">
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                            </span>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="menu__content">
+                        <div class="cheese__data">
+                        <div class="cheese-img">
+                        <img class="menu__image" src="asset/img/Biscoff cheesecake.png" alt="">
+                        </div>
+                            <div class="cheese__data__info">
+                            <h2 class="our-menu__title">
+                                Biscoff CheeseCake
+                            </h2>
+                            <p class="our-menu__subtitle">
+                                Biscoff adores cheese cake magic
+                            </p>
+                        </div>
+                        <div class="our-menu__cost">
+                            <h4 class="our-menu__prize">
+                            <span class="dollar">
+                                $
+                            </span>
+                            11.00
+                            </h4>
+                            <span class="our-menu__rating">
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                            </span>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="menu__content">
+                        <div class="cheese__data">
+                        <div class="cheese-img">
+                        <img class="menu__image" src="asset/img/Biscoff cheesecake.png" alt="">
+                        </div>
+                            <div class="cheese__data__info">
+                            <h2 class="our-menu__title">
+                                Biscoff CheeseCake
+                            </h2>
+                            <p class="our-menu__subtitle">
+                                Biscoff adores cheese cake magic
+                            </p>
+                        </div>
+                        <div class="our-menu__cost">
+                            <h4 class="our-menu__prize">
+                            <span class="dollar">
+                                $
+                            </span>
+                            11.00
+                            </h4>
+                            <span class="our-menu__rating">
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                            </span>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="menu__content">
+                        <div class="cheese__data">
+                        <div class="cheese-img">
+                        <img class="menu__image" src="asset/img/Biscoff cheesecake.png" alt="">
+                        </div>
+                            <div class="cheese__data__info">
+                            <h2 class="our-menu__title">
+                                Biscoff CheeseCake
+                            </h2>
+                            <p class="our-menu__subtitle">
+                                Biscoff adores cheese cake magic
+                            </p>
+                        </div>
+                        <div class="our-menu__cost">
+                            <h4 class="our-menu__prize">
+                            <span class="dollar">
+                                $
+                            </span>
+                            11.00
+                            </h4>
+                            <span class="our-menu__rating">
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                            </span>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="menu__content">
+                        <div class="cheese__data">
+                        <div class="cheese-img">
+                        <img class="menu__image" src="asset/img/Biscoff cheesecake.png" alt="">
+                        </div>
+                            <div class="cheese__data__info">
+                            <h2 class="our-menu__title">
+                                Biscoff CheeseCake
+                            </h2>
+                            <p class="our-menu__subtitle">
+                                Biscoff adores cheese cake magic
+                            </p>
+                        </div>
+                        <div class="our-menu__cost">
+                            <h4 class="our-menu__prize">
+                            <span class="dollar">
+                                $
+                            </span>
+                            11.00
+                            </h4>
+                            <span class="our-menu__rating">
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                            </span>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="menu__content">
+                        <div class="cheese__data">
+                        <div class="cheese-img">
+                        <img class="menu__image" src="asset/img/Biscoff cheesecake.png" alt="">
+                        </div>
+                            <div class="cheese__data__info">
+                            <h2 class="our-menu__title">
+                                Biscoff CheeseCake
+                            </h2>
+                            <p class="our-menu__subtitle">
+                                Biscoff adores cheese cake magic
+                            </p>
+                        </div>
+                        <div class="our-menu__cost">
+                            <h4 class="our-menu__prize">
+                            <span class="dollar">
+                                $
+                            </span>
+                            11.00
+                            </h4>
+                            <span class="our-menu__rating">
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                                <i class="ri-star-s-fill menu-star"></i>
+                            </span>
+                        </div>
+                        </div>
+                    </article>
                     <article class="menu__content">
                         <div class="cheese__data">
                         <div class="cheese-img">
@@ -501,7 +810,18 @@
                 </div>
             </div>
         </div>
+
+        
     </section>
+ <div class="blog">
+            <h1 class="blog-title">
+                Our Blog
+            </h1>
+            <h4 class="blog-subtitle">
+                Our Recent Post
+            </h4>
+        </div> 
+    
     </main>
 
 
