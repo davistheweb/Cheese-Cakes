@@ -89,7 +89,7 @@ window.onscroll = () => {
   };
 
 
-<<<<<<< HEAD
+
   const watchVideo = document.querySelector('.watch-video');
 const watchDemo = document.querySelector('.home__video');
 
@@ -106,8 +106,8 @@ watchVideo.addEventListener('click', () => {
         // You may also want to add code to pause or stop the video here
     }
 });
-=======
-  const watchVideo = document.querySelector('.watch-video'),
+
+  /* const watchVideo = document.querySelector('.watch-video'),
    watchDemo = document.querySelector('.watch-demo');
 
   watchVideo.addEventListener('click', () => {
@@ -118,8 +118,8 @@ watchVideo.addEventListener('click', () => {
       } else {
           watchVideo.innerHTML = '<i class="ri-play-circle-fill"></i> Watch Demo';
       }
-  });
->>>>>>> 61ca578f8564697215a903cde092f9b856fe4ce2
+  }); */
+
 
 
   
