@@ -767,12 +767,7 @@
         transition: transform 1s ease;
         
     }
-    .view-more-menu::-webkit-scrollbar{
-        background-color: var(--home-text-color);
-    }
-    .view-more-menu::-webkit-scrollbar-thumb{
-        background-color: var(--blog-background-color);
-    }
+    
 
     .show-menu.view-more-menu{
         transition: transform .3s ease;
@@ -822,6 +817,13 @@
         margin-top: 1rem;
         height: 57vh;
         overflow-x: hidden;
+    }
+
+    .menu-description::-webkit-scrollbar{
+        background-color: var(--home-text-color);
+    }
+    .menu-description::-webkit-scrollbar-thumb{
+        background-color: var(--blog-background-color);
     }
 
     .our-menu__title{
@@ -886,6 +888,11 @@
         
     }
 
+    .blog-container{
+        
+        padding-bottom: 9rem;
+    }
+
     .blog-title,
     .blog-subtitle
     {
@@ -910,6 +917,7 @@
         margin-top: 7rem;
         grid-template-columns: repeat(3, 3fr);
         gap: 2rem;
+        
     }
 
     .blog__menu{
@@ -994,6 +1002,129 @@
 
         background-color: var(--home-text-color);
     }
+
+    .contact-info{
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+        grid-template-columns: repeat(2, 10fr);
+        gap: 7rem;
+    }
+
+    .contact-card__title{
+        font-size: 2.5rem;
+        font-family: var(--accent-font);
+        color: var(--menu-content-background-color);
+        font-weight: var(--font--smaller);
+        margin-top: 2rem;
+    }
+
+    .contact-card__subtitle {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        font-family: var(--sub-accent-font);
+        font-weight: var(--font-small);
+        color: var(--menu-content-background-color);
+    }
+
+    .contact-image{
+        padding: 0 2%;
+    }
+
+    .contact-img{
+        width: 310px;
+        height: 300px;
+    }
+
+    .contact-socials{
+        display: flex;
+        margin-top: 2rem;
+        gap: 1.3rem;
+    }
+
+    .contact-socials .facebook {
+        background-color:#ff9900 ;
+    }
+
+    .contact__socials {
+        padding: .65rem;
+        justify-content: center;
+        color: var(--menu-content-subtitle-color);
+        font-size: 1.563rem;
+        font-weight: var(--font-medium);
+        background-color: #edffef;
+        border-radius: 200rem;
+
+    }
+
+    .contact-end {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-last-title {
+        font-size: 1.25rem;
+        font-weight: var(--font-small);
+        font-family: var(--sub-accent-font);
+        font-weight: var(--font-small);
+        color: var(--blog-background-color);
+    }
+
+    .contact-form{
+        display: block;
+        margin-top: 7rem;
+        margin-left: 5rem;
+    }
+
+    input {
+        width: 413px;
+        height: 3.875rem;
+        border-radius: 3.75rem;
+    }
+
+    .contact-form form input::placeholder, 
+    .contact-form form textarea::placeholder
+    {
+        left: 1.5rem;
+        position: absolute;
+    }
+
+    textarea {
+        width: 26.06rem;
+        height: 10.063rem;
+        resize: none;
+        border-radius: 1.625rem;
+    }
+    
+    .contact-form form textarea::placeholder {
+        margin-top: 1rem;
+    }
+
+    .contact-button {
+        margin-top: 1rem;
+        width: 20.06rem;
+        height: 3.813rem;
+        justify-self: center;
+        align-self: center;
+        border-radius: 3.75rem;
+        border: none;
+        background: #feae36;
+        cursor: pointer;
+    }
+
+
+
+    input,
+    textarea{
+        margin-top: 1rem;
+        outline: none;
+        border: none;
+        background: #fcf9f4;
+    }
+    
+
+
+
+    
 
 
 
@@ -1841,6 +1972,26 @@
 
     }
 
+    .view-more{
+        margin-top: 4rem;
+       
+        display: flex;
+    }
+    
+    .view__more{
+       align-items: flex-end;
+       margin-left: auto;
+       color: var(--white-color);
+       font-size: 1.3563rem;
+       font-family: var(--sub-accent-font);
+       margin-bottom: 3rem;
+       cursor: pointer;
+       
+    }
+    .view__more i {
+        font-size: 1.532rem;
+    }
+
     .view-more-menu{
         width: 60%;
         margin-left: 10rem;
@@ -1955,6 +2106,7 @@
         margin-top: 0.5rem;
     }
 
+    
 
     
 }
