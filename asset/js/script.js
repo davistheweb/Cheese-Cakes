@@ -1,18 +1,28 @@
 //hamburger js
-  const showMenu = (toggleId, navId) => {
+
+const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
+    nav = document.getElementById(navId),
+    navLinks = nav.querySelectorAll('a');
 
-    toggle.addEventListener('click', () => {
-        nav.classList.toggle('open');
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.classList.toggle('open-icon');
+  });
 
-        toggle.classList.toggle('open-icon');
-    })
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.classList.remove('open-icon');
+    });
+  });
+};
 
-}
 showMenu('nav-toggle', 'nav-list');
 
+
 //active js 
+
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-list a');
 
@@ -38,9 +48,9 @@ showMenu('nav-toggle', 'nav-list');
     });
   };
 
-
-  const watchVideo = document.querySelector('.watch-video');
-  const watchDemo = document.querySelector('.home__video');
+// watch video
+  const watchVideo = document.querySelector('.watch-video'),
+  watchDemo = document.querySelector('.home__video');
 
   watchVideo.addEventListener('click', () => {
       watchDemo.classList.toggle('video-open');
@@ -54,7 +64,7 @@ showMenu('nav-toggle', 'nav-list');
       }
   });
 
-    
+//swiper js
   let swiperCards = new Swiper(".cheese-content", {
     loop: true,
     spaceBetween: 40,
@@ -75,7 +85,8 @@ showMenu('nav-toggle', 'nav-list');
     },
   });
 
-  //Const More Menu
+
+  // More Menu
 
   document.addEventListener('DOMContentLoaded', function () {
     const viewMoreButton = document.getElementById('view__more');
@@ -120,7 +131,7 @@ showMenu('nav-toggle', 'nav-list');
       reset:'true', 
       });
 
-      ScrollReveal().reveal('.about-info', { origin:'right'});
-      ScrollReveal().reveal(' .about-img', { origin:'left'});
+      ScrollReveal().reveal('.about-info, .contact-form', { origin:'right'});
+      ScrollReveal().reveal(' .about-img, .contact-card', { origin:'left'});
       ScrollReveal().reveal('.home-image, .menu__title, .blog-subtitle, .blog__menu', { origin: 'bottom'});
       ScrollReveal().reveal('.container-home, .menu__card, .blog-title', { origin:'top'});

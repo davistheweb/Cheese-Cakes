@@ -60,21 +60,21 @@
 
         /*----------=============Webkit-------------================= */
 
-        ::-webkit-scrollbar {
-            width: .6rem;
-            background: transparent;
-            border-radius: 1rem;
-            transition: .3s ease;
+    ::-webkit-scrollbar {
+        width: .6rem;
+        background: transparent;
+        border-radius: 1rem;
+        transition: .3s ease;
         }
 
-        ::-webkit-scrollbar-thumb {
-            width: 6rem;
-            border-radius: 1rem;
-            background:transparent;
+    ::-webkit-scrollbar-thumb {
+        width: 6rem;
+        border-radius: 1rem;
+        background:transparent;
         }
 
-        ::-webkit-scrollbar-thumb:hover{
-            background-color: var(--scrollbar-color);
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--scrollbar-color);
         }
 
 
@@ -87,18 +87,15 @@
         scroll-behavior: smooth;  
         
     }
-    body{
-        /* background:url(/asset/img/MAIN\ BG.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; */
+    body {
         width: 100%;
         height: 1000vh;
         }
 
-       .grid{
+        /* Reuseable css */
+    .grid {
         display: grid;
-       }
+    }
 
     main{
         justify-content: center;
@@ -232,10 +229,11 @@
             right: 0;
             overflow: auto;
             display: grid;
+            grid-template-columns: repeat(3, 0fr);
             border-radius: 5px;
             opacity: 0;
             justify-content: flex-start;
-            height: 50vh;
+            height: 35vh;
             transition: opacity .5s, 
             transform .4s, margin-top .4s;
             
@@ -1967,7 +1965,7 @@
 
     .home-image {
         margin-top: -3.5rem;
-        margin-right: -2rem;
+        margin-right: -5rem;
         margin-left: 3rem;
         display: block;
     }
