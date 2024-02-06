@@ -105,7 +105,8 @@
     
     /*-----================HEADER START================----------*/
     header {
-        background:url(/asset/img/MAIN\ BG2.png);
+       background: linear-gradient(to top right,  #f0ba8a, #dedbd8);
+        
         width: 100%;
         height: 17.9vh;
         border: none;
@@ -231,12 +232,12 @@
             display: grid;
             grid-template-columns: repeat(3, 0fr);
             border-radius: 5px;
-            opacity: 0;
             justify-content: flex-start;
             height: 35vh;
             transition: opacity .5s, 
             transform .4s, margin-top .4s;
-            
+            opacity: 0;
+            visibility: hidden;
         }
        
         .nav__toggle {
@@ -277,6 +278,7 @@
         
          .open {
             opacity: 99;
+            visibility: visible;
             margin-top: 6.9rem;
             pointer-events: initial;
         }
@@ -382,11 +384,16 @@
 
 
     .home {
-        background: url(../img/MAIN\ BG.png);
+        /* background: url(../img/MAIN\ BG.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
+        background: linear-gradient(to top right,  #f0ba8a,#b7906d, #dedbd8);
+            /* Optionally, you can adjust the angle to achieve the desired effect */
+            /* background-image: linear-gradient(135deg, #FCF9F4, #79533B, #6A4028); */
+            /* You can also adjust background-size, background-repeat, etc. */
+       
+        
         width: 100%;
-        height: 110vh;
         padding-bottom: 2rem;
      
 
@@ -417,7 +424,6 @@
         padding-bottom: 0.5rem;
         gap: 1rem;
         display: flex;
-        z-index: 9999999999999;
     }
 
     .get-started,
@@ -442,7 +448,6 @@
         border: 1px solid #6A4028;
         color: #6A4028;
         cursor: pointer;
-        z-index: 99999999999999999999999999999999999999999999999;
     }
 
     .home__video {
@@ -457,7 +462,6 @@
         height: 80%;
         transition: width 0.3s ease, height 0.2s ease;
         border-radius: 2rem;
-        z-index: 99999999999;
     }
     
     @keyframes fadeIn {
@@ -476,7 +480,6 @@
         display: block;
         animation: fadeIn .3s ease-in-out;
         margin-block: 2rem;
-        z-index: 99999999999;
     }
 
     .home-image {
@@ -1198,7 +1201,6 @@
         .watch-video {
             padding: .65rem .80rem;
             font-size: 0.6rem;
-            z-index:99999999999999999;
         }
 
         .home__video iframe {
@@ -1289,12 +1291,6 @@
 
         .view__more{
             font-size: 1rem;
-        }
-
-        .close__cheese__menu{
-            
-            z-index: 999999999;
-            
         }
 
         .our-menu{
@@ -1410,10 +1406,6 @@
 
     @media screen and (min-width:23.813em) {
 
-        .home {
-            height: 130vh;
-        }
-
         .container-home {
 
             padding-top: 10rem;
@@ -1432,7 +1424,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            z-index:999999999999999999999999999999999999999999;
             
         }
 
@@ -1692,11 +1683,6 @@
         section {
             padding: 0 8%;
         }
-
-        .home {
-            height: 99vh;
-        }
-
         
         .container {
             padding-top: 7rem;
@@ -1916,7 +1902,7 @@
     }
 
     .home {
-        height: 109vh;
+        padding-bottom: 50rem;
     }
 
     .container-home {
