@@ -1209,12 +1209,12 @@
 
         .home-image {
             margin-top: -1rem;
-            margin-left: -2rem;
+            margin-left: -3rem;
             z-index: 0;
         }
         .home__img {
-            width: 350px;
-            height: 340px;
+            width: 400px;
+            height: 390px;
         }
 
         .home-title,
@@ -1451,12 +1451,12 @@
 
         .home-image {
             margin-top: 1rem;
-            margin-left: -2rem;
+            margin-left: -4rem;
             z-index: 0;
         }
         .home__img {
-            width: 350px;
-            height: 340px;
+            width: 430px;
+            height: 400px;
         }
 
 
