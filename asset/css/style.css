@@ -748,7 +748,6 @@
         background-color:#573d2f;
         justify-content: center;
         align-items: center;
-        top: 105.3rem;
         z-index: 99999;
         border-radius: 1.5rem;
         box-shadow: var(--about-box-shadow);
@@ -1136,7 +1135,7 @@
         color: var(--white-color);
         z-index: 100;
         border-radius: .25rem;
-        box-shadow: 0 4px 16px hsla(0, 0%, 0%, .1);
+        box-shadow:var(--home-button-box-shadow);
         transition: bottom .8s, transform .8s, background .8s;
     }
     
@@ -1808,6 +1807,7 @@
         .view-more-menu{
             width: 100%;
             margin-left: -5rem;
+            top: 105rem;
         
         }
 
@@ -1943,6 +1943,10 @@
     
 @media screen and (min-width: 1124px) {
 
+    .home {
+        height: 100vh;
+    }
+
     .container-home {
         padding-top: 3rem;
     }
@@ -2011,18 +2015,12 @@
     }
 
     .home-image {
+        margin-top: -3.5rem;
         margin-right: -20rem;
         margin-left: 3rem;
         display: block;
     }
 
-    #about{
-        background-color: var(--white-color);
-        
-        width: 100%;
-        position: relative;
-        z-index: 100;
-    }
     .about-container{
         display: flex; 
         justify-content:flex-start;
@@ -2056,7 +2054,7 @@
     .about-title{
 
         color: #220404;
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-family: var(--accent-font);
         font-weight: 400;
     }
@@ -2064,7 +2062,7 @@
     .about-subtitle{
         color: rgba(27, 11, 11, 0.75);
         font-family: var(--general-font);
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         font-style: normal;
         font-weight: var(--font-smaller);
         line-height: normal;
@@ -2076,7 +2074,7 @@
         margin-top: 1.75rem;
         color: rgba(0, 0, 0, 0.70);
         font-family: var(--sub-accent-font);
-        font-size: 1.25rem;
+        font-size: 1.45rem;
         font-style: normal;
         font-weight: var(--font--smaller);
         line-height: normal;
@@ -2119,7 +2117,7 @@
     .view-more-menu{
         width: 60%;
         margin-left: 10rem;
-        top: 93.3rem;
+        top: 109.3rem;
     }
 
     .menu-description{
