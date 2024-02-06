@@ -206,7 +206,7 @@
     }
 
 
-    @media screen and (max-width:920px){
+    @media screen and (max-width:57.5em){
 
         header{
             height: 16.5vh;
@@ -282,7 +282,7 @@
         }
     }
 
-    @media screen and (max-width:600px){
+    @media screen and (max-width:37.5em){
 
         header{
             height: 15vh;
@@ -346,7 +346,7 @@
         }
 
     }
-    @media screen and (max-width:380px){
+    @media screen and (max-width:31.188em){
 
         .logo{
             transform: translateX(0);
@@ -368,7 +368,7 @@
         }
     }
 
-    @media screen and (max-width:320px){
+    @media screen and (max-width:20em){
 
         header{
             height: 14.9vh;
@@ -742,31 +742,36 @@
 
 
     .view-more-menu{
-        position: absolute;
-        width:40%;
-        margin-left: 15rem;
-        background-color:#573d2f;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color:rgba(87, 61, 47, 0.3);
+        display: flex;
         justify-content: center;
         align-items: center;
         z-index: 99999;
-        border-radius: 1.5rem;
         box-shadow: var(--about-box-shadow);
-        transform: scale(0);
-        transition: transform .3s ease;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease;
         
     }
     
 
     .show-menu.view-more-menu{
-        transition: transform .3s ease;
-        transform: scale(1);
+        transition: .3s ease;
+        opacity: 1;
+        visibility:visible;
     }
 
-     .view-more-menu .close__cheese__menu {
-        margin-top: 1rem;
-        position: fixed;
-        top: 0;
+     .menu_container .close__cheese__menu {
+        position: absolute;
         right: 1rem;
+        top: 1rem;
+        align-items: flex-end;
+        margin-left: auto;
         color: var(--white-color);
         font-size: 1.5rem;
         cursor: pointer; 
@@ -776,7 +781,7 @@
         box-shadow: var(--home-button-box-shadow);
     }
 
-    .our-menu{
+    .our-menu {
         font-family: var(--accent-font);
         font-weight: var(--font-small);
         font-size: 1.3rem;
@@ -797,17 +802,31 @@
         margin-top: 1rem;
     }
 
-    .menu-description{
-        
-        grid-template-columns: repeat(2, 0.44fr);
-        gap: 1rem;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        height: 57vh;
-        overflow-x: hidden;
+    .menu_container {
         justify-content: center;
         align-items: center;
+        position: absolute; 
+        background-color: #573d2f;
+        padding: 30px;
+        border-radius: 3rem;
+        margin-top: 7rem;
+       
+        
+  
     }
+
+    .menu-description {
+        position: relative;
+        grid-template-columns: repeat(2, 0fr);
+        gap: 1rem;
+        margin-bottom: 1rem;
+        height: 65vh;
+        background-color: #573d2f;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+   
 
     .menu-description::-webkit-scrollbar{
         background-color: var(--home-text-color);
@@ -1150,27 +1169,10 @@
         bottom: 3rem;
     }
 
-
-
-   
+    /*====================---------------------BREAKPOINTS----------------------+========================== */
     
 
-
-
-    
-
-
-
-
-
-
-
-    
-
-    @media screen and (max-width:380px) {
-
-        
-
+    @media screen and (max-width:23.75em) {
 
         .container-home {
 
@@ -1276,6 +1278,7 @@
             font-size: 1.7rem;
         }
 
+       
 
         .cheese__title,
         .cheese__subtitle
@@ -1287,13 +1290,6 @@
         .view__more{
             font-size: 1rem;
         }
-        .view-more-menu{
-            overflow-x: hidden;
-            width: 100%;
-            margin-left: -2rem;
-            top: 95rem;
-            
-        }
 
         .close__cheese__menu{
             
@@ -1304,6 +1300,17 @@
         .our-menu{
             font-size: 0.9rem;
         }
+
+        .menu_container {
+            padding-right: 70px;
+            padding-left: 70px;
+        }
+
+        .menu_container {
+            padding-right: 80px;
+            padding-left: 80px;
+        }
+
 
         .menu-description {
             margin-top: 3rem;
@@ -1401,7 +1408,7 @@
         
     }
 
-    @media screen and (min-width:381px) {
+    @media screen and (min-width:23.813em) {
 
         .home {
             height: 130vh;
@@ -1493,24 +1500,25 @@
         font-size: 0.99rem;
     }
 
-        .about-img img{
+        .about-img img {
             margin-top: -3rem;
             width: 250px;
             height: 240px;
         }
 
-        .about-link{
+        .about-link {
             padding: 15px 25px;
             font-size: 14.2px;
         }
 
-        .menu{
+        .menu {
             margin-top: -3rem;
         }
 
         .menu__title {
             font-size: 1.7rem;
         }
+
         .cheese__title,
         .cheese__subtitle
         {
@@ -1522,12 +1530,6 @@
             font-size: 1rem;
         }
 
-        .view-more-menu {
-            width: 100%;
-            margin-left: -3rem;
-            top: 90rem;  
-        }
-
         .close__cheese__menu {
              z-index: 999999999;
             
@@ -1535,6 +1537,11 @@
 
         .our-menu {
             font-size: 0.9rem;
+        }
+
+        .menu_container {
+            padding-right: 100px;
+            padding-left: 100px;
         }
 
         .menu-description {
@@ -1631,7 +1638,7 @@
     }
 
 
-    @media screen and (min-width:580px) {
+    @media screen and (min-width:36.25em) {
 
         .home-image {
             margin-top: -1rem;
@@ -1659,11 +1666,7 @@
             text-align: start;
             margin-left: 2rem;
         }
-
-        .view-more-menu {
-            margin-left: -3rem;
-            top: 96rem;
-        }
+        
 
         .menu-description {
             grid-template-columns: repeat(2, 0fr);
@@ -1684,19 +1687,19 @@
 
     
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:48.75em) {
 
         section {
             padding: 0 8%;
         }
 
         .home {
-            height: 130vh;
+            height: 99vh;
         }
 
         
         .container {
-            padding-top: 0rem;
+            padding-top: 7rem;
             padding-bottom: 3rem;
             grid-template-columns: repeat(2, 10fr);
             column-gap: 1rem;
@@ -1704,6 +1707,10 @@
          
         .container-home {
             margin-top: -1.5rem;
+        }
+
+        .home-title {
+            font-size: 4rem;
         }
 
         .home-title,
@@ -1780,12 +1787,6 @@
             font-size: 2.5rem;
         }
 
-        .view-more-menu {
-            width: 100%;
-            margin-left: -4rem;
-            top: 115rem;
-        }
-
         .menu-description {
             grid-template-columns: repeat(2, 0fr);
 
@@ -1825,7 +1826,7 @@
 
     }
 
-    @media screen and (min-width:921px) {
+    @media screen and (min-width:57.563em) {
 
         .logo {
             margin-left: 1.4rem;
@@ -1874,16 +1875,11 @@
             font-size: 0.95rem;
         }
 
-        .view-more-menu {
-            width: 70%;
-            margin-left: 5rem;
-            top: 105rem;
-        }
-
         .blog-content {
             margin-top: 7rem;
-            grid-template-columns: repeat(3, 3fr);
-            gap: 2rem;
+            grid-template-columns: repeat(3, 0fr);
+            gap: 0;
+            margin-right: 3rem;
         }
         .blog-title {
             font-size: 4rem;
@@ -1908,7 +1904,7 @@
         }
     }
     
-@media screen and (min-width: 1124px) {
+@media screen and (min-width: 70.25em) {
            
     .right-header {
         margin-right: 7rem;
@@ -2003,6 +1999,7 @@
        font-size: 1.15rem;
     justify-content: start;
     }
+
     
     .view__more {
         font-size: 1.3563rem;
@@ -2023,6 +2020,11 @@
     .blog-img img {
         width: 250px;
         height: 250px;
+    }
+
+    .blog-content {
+        gap: 3rem;
+        margin-right: 0;
     }
 
     .contact-image {
@@ -2082,13 +2084,7 @@
 
 }
 
-@media screen and (min-width:1200px ){
-
-    .view-more-menu  {
-        width: 40%;
-        margin-left: 15rem;
-        top: 105.3rem;
-    }
+@media screen and (min-width:75em){
 
     .menu-description {
         grid-template-columns: repeat(2, 0fr);
