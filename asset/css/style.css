@@ -1897,6 +1897,15 @@
         .contact-info {
             grid-template-columns: repeat(2, 10fr);
         }  
+
+        .contact-form {
+            margin-left: 5rem;
+            z-index: 0;
+        }
+
+        .contact-button {
+            margin-right: -20rem;
+        }
     }
     
 @media screen and (min-width: 1124px) {
