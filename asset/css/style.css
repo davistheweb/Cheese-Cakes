@@ -384,15 +384,7 @@
 
 
     .home {
-        /* background: url(../img/MAIN\ BG.png);
-        background-repeat: no-repeat;
-        background-size: cover; */
         background: linear-gradient(to top right,  #f0ba8a,#b7906d, #dedbd8);
-            /* Optionally, you can adjust the angle to achieve the desired effect */
-            /* background-image: linear-gradient(135deg, #FCF9F4, #79533B, #6A4028); */
-            /* You can also adjust background-size, background-repeat, etc. */
-       
-        
         width: 100%;
         padding-bottom: 2rem;
      
@@ -1899,10 +1891,6 @@
 
     section{
         padding: 0 9%;
-    }
-
-    .home {
-        padding-bottom: 50rem;
     }
 
     .container-home {
