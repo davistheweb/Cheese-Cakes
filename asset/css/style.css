@@ -232,7 +232,7 @@
             display: grid;
             border-radius: 5px;
             justify-content: flex-start;
-            height: 35vh;
+            height: 50vh;
             transition: opacity .5s, 
             transform .4s, margin-top .4s;
             opacity: 0;
