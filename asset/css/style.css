@@ -230,7 +230,6 @@
             right: 0;
             overflow: auto;
             display: grid;
-            grid-template-columns: repeat(3, 0fr);
             border-radius: 5px;
             justify-content: flex-start;
             height: 35vh;
